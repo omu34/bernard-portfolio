@@ -18,7 +18,7 @@ export const skills = [
   },
   {
     title: "DevOps",
-    items: ["Docker", "Laravel Cloud", "Laravel Forge", "Render", "Vercel", "Heroku", "GitHub Actions"],
+    items: ["Docker", "Laravel Cloud", "Laravel Forge", "Netlify", "Render", "Vercel", "Heroku", "GitHub Actions"],
     icon: CloudLightning,
   },
 ];
