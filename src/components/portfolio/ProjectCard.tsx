@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import {
   ArrowUpRight,
   ShieldCheck,
@@ -24,7 +23,13 @@ interface Project {
   iconName: string;
 }
 
-export function ProjectCard({ project, index }: { project: Project; index: number }) {
+export function ProjectCard({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) {
   const iconMap: Record<string, React.ElementType> = {
     ShieldCheck,
     MessagesSquare,
@@ -39,29 +44,34 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
   const Icon = iconMap[project.iconName] ?? Briefcase;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+    <div
+      data-aos="zoom-in-up"
+      data-aos-delay={index * 100}
+      className="h-full flex flex-col"
     >
-      <Card className="h-full rounded-3xl bg-white/5 border-white/10 backdrop-blur-md">
-        <CardContent className="p-6 text-white">
+      <Card className="h-full flex flex-col rounded-3xl bg-white/5 border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+        <CardContent className="p-6 flex flex-col flex-grow text-white">
+          {/* Icon + Title */}
           <div className="flex items-center gap-3">
             <div className="size-10 grid place-items-center rounded-2xl bg-white/10 border border-white/10">
-              <Icon className="size-5 text-white/80 hover:bg-gray-100" />
+              <Icon className="size-5 text-white/80" />
             </div>
-            <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+            <h3 className="text-lg font-semibold text-white">
+              {project.title}
+            </h3>
           </div>
 
-          <p className="mt-3 text-slate-300">{project.summary}</p>
+          {/* Summary */}
+          <p className="mt-3 text-slate-300 flex-grow">{project.summary}</p>
 
+          {/* Tags */}
           <div className="mt-4 flex flex-wrap gap-2">
             {project.tags.map((t) => (
               <Badge key={t}>{t}</Badge>
             ))}
           </div>
 
+          {/* Links */}
           <div className="mt-5 flex flex-wrap gap-2">
             {project.links.map((l) => (
               <a
@@ -77,6 +87,6 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           </div>
         </CardContent>
       </Card>
-    </motion.div>
+    </div>
   );
 }
