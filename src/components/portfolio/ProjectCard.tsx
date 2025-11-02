@@ -2,7 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Briefcase, MessageSquare, ShoppingCart, AreaChart } from "lucide-react";
+import {
+  ArrowUpRight,
+  ShieldCheck,
+  MessagesSquare,
+  ShoppingBag,
+  Globe,
+  Briefcase,
+  MessageSquare,
+  ShoppingCart,
+  AreaChart,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/portfolio/Badge";
 
@@ -15,8 +25,11 @@ interface Project {
 }
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
-  // map string -> actual lucide icon component
   const iconMap: Record<string, React.ElementType> = {
+    ShieldCheck,
+    MessagesSquare,
+    ShoppingBag,
+    Globe,
     Briefcase,
     MessageSquare,
     ShoppingCart,
@@ -36,7 +49,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         <CardContent className="p-6 text-white">
           <div className="flex items-center gap-3">
             <div className="size-10 grid place-items-center rounded-2xl bg-white/10 border border-white/10">
-              <Icon className="size-5 text-white/80" />
+              <Icon className="size-5 text-white/80 hover:bg-gray-100" />
             </div>
             <h3 className="text-lg font-semibold text-white">{project.title}</h3>
           </div>

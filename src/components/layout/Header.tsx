@@ -2,15 +2,24 @@ import React from "react";
 import { Sparkles, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Social } from "@/components/portfolio/Social";
+import Image from "next/image";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60 border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="size-9 rounded-2xl bg-white/10 grid place-items-center shadow-inner">
-            <Sparkles className="size-5" />
+          <div className="size-9 rounded-2xl bg-white/10 grid place-items-center shadow-inner overflow-hidden">
+            <Image
+  src="/passport.jpg"
+  alt="Bernard E. Omuse"
+  width={36}
+  height={36}
+  className="w-full h-full object-cover rounded-2xl"
+/>
+
           </div>
+
           <span className="font-semibold tracking-tight">Bernard E. Omuse</span>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">

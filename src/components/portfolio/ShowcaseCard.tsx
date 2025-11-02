@@ -1,7 +1,12 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, ShieldCheck, MessagesSquare, ShoppingBag } from "lucide-react";
+import {
+  ArrowUpRight,
+  ShieldCheck,
+  MessagesSquare,
+  ShoppingBag,
+} from "lucide-react";
 
 export function ShowcaseCard() {
   return (
@@ -9,19 +14,41 @@ export function ShowcaseCard() {
       <CardContent className="p-6">
         <div className="grid gap-6">
           <div>
-            <p className="text-sm uppercase tracking-widest opacity-80">Recent Work</p>
-            <h3 className="mt-1 text-lg font-semibold">Enterprise + Real-time + Commerce + SaaS</h3>
+            <p className="text-sm uppercase tracking-widest opacity-80">
+              Recent Work
+            </p>
+            <h3 className="mt-1 text-lg font-semibold">
+              Enterprise + Real-time + Commerce + SaaS
+            </h3>
           </div>
 
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
-              <ShieldCheck className="size-4 text-white" /> Enterprise CMS for Kenya Power
+              <ShieldCheck className="size-4 text-white" />{" "}
+              <a
+                href="https://newsroom.kplc.co.ke/"
+                className="hover:text-gray-500" target="_blank"
+              >
+                Enterprise CMS for Kenya Power
+              </a>
             </li>
             <li className="flex items-center gap-2">
-              <MessagesSquare className="size-4 text-white" /> Real-time legal comms (Masika Law)
+              <MessagesSquare className="size-4 text-white" />{" "}
+              <a
+                href="https://masika-app-54x8.onrender.com"
+                className="hover:text-gray-500" target="_blank"
+              >
+                Real-time legal comms (Masika Law)
+              </a>
             </li>
             <li className="flex items-center gap-2">
-              <ShoppingBag className="size-4 text-white" /> Multi-tenant SaaS (Roundi Commerce)
+              <ShoppingBag className="size-4 text-white" />{" "}
+              <a
+                href="https://raondi-commerce.laravel.cloud"
+                className="hover:text-gray-500" target="_blank"
+              >
+                Multi-tenant SaaS (Roundi Commerce)
+              </a>
             </li>
           </ul>
 

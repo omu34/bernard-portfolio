@@ -21,7 +21,8 @@ export function Hero() {
             Full Stack Developer & Prompt Engineer
           </motion.h1>
           <p className="mt-5 text-slate-300 leading-relaxed max-w-2xl">
-            I build scalable, user‑centric web apps with <strong>Laravel</strong>, <strong>Livewire</strong>, <strong>Filament</strong>, and <strong>React/Next.js</strong> —
+            
+            I build scalable, user‑centric Software and Web apps with <strong>Laravel</strong>, <strong>Livewire</strong>, <strong>Filament</strong>, and <strong>React/Next.js</strong> —
             from enterprise CMS and real‑time systems to modern e‑commerce. 5+ years shipping clean, maintainable code.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">

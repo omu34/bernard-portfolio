@@ -1,5 +1,5 @@
 import React from "react";
-import { education, certs } from "@/data/portfolio";
+import { education, certs } from "@/data/education";
 import { SectionHeading } from "@/components/portfolio/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 
