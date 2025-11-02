@@ -5,7 +5,7 @@ export const education = [
   },
   {
     title: "Associate Degree in Agri-Ecology & Sustainable Agriculture",
-    org: "University of Eldoret, Kenya (2012",
+    org: "University of Eldoret, Kenya (2012)",
   },
   {
     title: "Diploma in Project Management",

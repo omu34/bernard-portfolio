@@ -13,8 +13,8 @@ export function Header() {
             <Image
   src="/passport.jpg"
   alt="Bernard E. Omuse"
-  width={36}
-  height={36}
+  width={48}
+  height={48}
   className="w-full h-full object-cover rounded-2xl"
 />
 
