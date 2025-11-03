@@ -54,7 +54,7 @@ export function ShowcaseCard() {
 
           <div className="flex gap-3">
             <Button asChild className="rounded-2xl text-white">
-              <a href="https://bernard-portfolio-sigma.vercel.app/">See Resume</a>
+              <a href="https://www.canva.com/design/DAG3qAV2RME/XMe_37aCiE5Y826Oi0pO5w/view?utm_content=DAG3qAV2RME&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3555fd98e5">See Resume</a>
             </Button>
             <Button
               asChild
