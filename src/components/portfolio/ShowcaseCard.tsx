@@ -54,7 +54,7 @@ export function ShowcaseCard() {
 
           <div className="flex gap-3">
             <Button asChild className="rounded-2xl text-white">
-              <a href="#projects">See Portfolio</a>
+              <a href="https://bernard-portfolio-sigma.vercel.app/">See Resume</a>
             </Button>
             <Button
               asChild
