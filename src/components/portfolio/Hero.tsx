@@ -18,7 +18,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold tracking-tight"
           >
-            Full Stack Developer & Prompt Engineer
+            Software  Developer & Context Engineer
           </motion.h1>
           <p className="mt-5 text-slate-300 leading-relaxed max-w-2xl">
             
