@@ -12,7 +12,8 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_circle_at_20%_-10%,rgba(56,189,248,.15),transparent_60%),radial-gradient(800px_circle_at_80%_0%,rgba(99,102,241,.12),transparent_50%)]" />
       <div className="mx-auto max-w-7xl px-4 py-20 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-7 text-[#ffffff]">
-          <motion.h1
+
+<motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -20,10 +21,16 @@ export function Hero() {
           >
             Software  Developer & Context Engineer
           </motion.h1>
+
+
+
+
+          
           <p className="mt-5 text-slate-300 leading-relaxed max-w-2xl">
-            
-            I build scalable, user‑centric Software and Web apps with <strong>Laravel</strong>, <strong>Livewire</strong>, <strong>Filament</strong>, and <strong>React/Next.js</strong> —
-            from enterprise CMS and real‑time systems to modern e‑commerce. 5+ years shipping clean, maintainable code.
+          Highly accomplished Software Engineer with 5+ years of experience in designing, developing, and deploying scalable, user-centric software and web applications.
+          Expert in both <strong>Python</strong> and <strong> JavaScript</strong> programming languages, with a strong background in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Flask</strong> frameworks.
+            Proficient in the <strong>Laravel</strong> ecosystem, <strong>(Livewire</strong> and <strong>Filament)</strong>
+            . Consistently delivering clean, maintainable code for diverse projects, including enterprise CMS, real-time systems, and modern e-commerce solutions.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button asChild className="rounded-2xl">
@@ -51,3 +58,11 @@ export function Hero() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
