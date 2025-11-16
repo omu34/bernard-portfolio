@@ -29,7 +29,7 @@ export function Hero() {
           <p className="mt-5 text-slate-300 leading-relaxed max-w-2xl">
           Highly accomplished Software Engineer with 5+ years of experience in designing, developing, and deploying scalable, user-centric software and web applications.
           Expert in both <strong>Python</strong> and <strong> JavaScript</strong> programming languages, with a strong background in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Flask</strong> frameworks.
-            Proficient in the <strong>Laravel</strong> ecosystem, <strong>(Livewire</strong> and <strong>Filament)</strong>
+            Proficient in the <strong>Laravel</strong> ecosystem, <strong>Livewire</strong> and <strong>Filament</strong>
             . Consistently delivering clean, maintainable code for diverse projects, including enterprise CMS, real-time systems, and modern e-commerce solutions.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
