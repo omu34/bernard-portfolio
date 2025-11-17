@@ -44,7 +44,7 @@ export function Experience() {
         <div data-aos="zoom-in-up" data-aos-delay="200" className="flex flex-col h-full">
           <ImpactCard
             kpi="3+ yrs"
-            label="Prompt Engineering"
+            label="Context Engineering"
             desc="AI integrations with GPT-4, automation, and content systems."
           />
         </div>
